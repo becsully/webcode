@@ -1,5 +1,5 @@
 """
-Django settings for django_poll project.
+Django settings for countertest project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd9586x&$s$)dxt@22fz)um(kmod-73&e(@c%s%&r%&p93!e%3@'
+SECRET_KEY = '$2o7yfu&xq6e5jya=x#+$kwadn8qt5l%^3%d$!-@)y3#us-x5w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,8 +36,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
-    'counter'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'django_poll.urls'
+ROOT_URLCONF = 'countertest.urls'
 
-WSGI_APPLICATION = 'django_poll.wsgi.application'
+WSGI_APPLICATION = 'countertest.wsgi.application'
 
 
 # Database
@@ -70,7 +68,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Los_Angeles'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
